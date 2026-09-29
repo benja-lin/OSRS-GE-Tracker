@@ -1,0 +1,12 @@
+name: 'osrs_ge_tracker'
+version: '1.0.0'
+config-version: 2
+
+profile: 'osrs_ge_tracker'
+
+model-paths: ["models"]
+
+models:
+  osrs_ge_tracker:
+    staging:
+      +materialized: view

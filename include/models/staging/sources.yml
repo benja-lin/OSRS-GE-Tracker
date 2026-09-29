@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    database: osrs
+    schema: main
+    tables:
+      - name: raw_mapping
+      - name: raw_5m_prices
