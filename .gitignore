@@ -2,4 +2,4 @@
 .env
 
 # Raw data
-data/raw/
+data/raw/data/osrs.duckdb
