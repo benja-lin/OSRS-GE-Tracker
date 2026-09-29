@@ -1,0 +1,7 @@
+osrs_ge_tracker:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: /opt/airflow/data/osrs.duckdb
+      threads: 1

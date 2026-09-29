@@ -1,0 +1,1598 @@
+[0m14:54:59.890152 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75cc35813a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75cc3411bd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75cc3411b890>]}
+
+
+============================== 14:54:59.941296 | 0e9b9ab1-853c-47e8-a430-825062f2067d ==============================
+[0m14:54:59.941296 [info ] [MainThread]: Running with dbt=1.12.2
+[0m14:54:59.942814 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'hints_enabled': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'printer_width': '80', 'debug': 'False', 'log_path': '/opt/airflow/include/logs', 'partial_parse': 'True', 'indirect_selection': 'eager', 'maximum_seed_size_mib': '1', 'version_check': 'True', 'target_path': 'None', 'log_cache_events': 'False', 'use_colors': 'True', 'no_print': 'None', 'profiles_dir': '.', 'introspect': 'True', 'quiet': 'False', 'invocation_command': 'dbt run --select stg_mapping --profiles-dir .', 'warn_error': 'None', 'empty': 'False', 'use_experimental_parser': 'False', 'log_format': 'default', 'fail_fast': 'False'}
+[0m14:55:00.289562 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0e9b9ab1-853c-47e8-a430-825062f2067d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75cc35329ba0>]}
+[0m14:55:00.479100 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0e9b9ab1-853c-47e8-a430-825062f2067d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75cc3596a470>]}
+[0m14:55:00.483231 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m14:55:00.586994 [debug] [MainThread]: checksum: abd22a93595a187da496bb2525a3e27287f0c8c6f4762e5b17fc3972fd556834, vars: {}, profile: osrs_ge_tracker, target: dev, version: 1.12.2
+[0m14:55:00.590889 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:55:00.592340 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '0e9b9ab1-853c-47e8-a430-825062f2067d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75cc3415d950>]}
+[0m14:55:01.865395 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.osrs_ge_tracker.staging
+[0m14:55:01.872379 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0e9b9ab1-853c-47e8-a430-825062f2067d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75cc34220320>]}
+[0m14:55:02.004378 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/include/target/manifest.json
+[0m14:55:02.013707 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/include/target/semantic_manifest.json
+[0m14:55:02.050075 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/include/target/osi_document.json
+[0m14:55:02.072413 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0e9b9ab1-853c-47e8-a430-825062f2067d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75cc25faf690>]}
+[0m14:55:02.073449 [info ] [MainThread]: Found 2 sources, 500 macros
+[0m14:55:02.074395 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0e9b9ab1-853c-47e8-a430-825062f2067d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75cc33d3d3d0>]}
+[0m14:55:02.075885 [warn ] [MainThread]: [[33mWARNING[0m]: The selection criterion 'stg_mapping' does not match any enabled nodes
+[0m14:55:02.078289 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m14:55:02.079713 [debug] [MainThread]: Command end result
+[0m14:55:02.147684 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/include/target/manifest.json
+[0m14:55:02.154937 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/include/target/semantic_manifest.json
+[0m14:55:02.163365 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/include/target/osi_document.json
+[0m14:55:02.171644 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/include/target/run_results.json
+[0m14:55:02.173493 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 2.3921869, "process_in_blocks": "39675", "process_kernel_time": 0.510261, "process_mem_max_rss": "160952", "process_out_blocks": "4416", "process_user_time": 4.64853}
+[0m14:55:02.174621 [debug] [MainThread]: Command `dbt run` succeeded at 14:55:02.174479 after 2.39 seconds
+[0m14:55:02.175517 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75cc3426cd10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75cc25f5cc00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75cc25f5ccb0>]}
+[0m14:55:02.176521 [debug] [MainThread]: Flushing usage events
+[0m14:55:02.340741 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:56:39.780805 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6d56346e40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6d54dd7ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6d54dd7b10>]}
+
+
+============================== 14:56:39.785286 | ef3cc405-6860-42b4-9bfe-5b73736c1bfa ==============================
+[0m14:56:39.785286 [info ] [MainThread]: Running with dbt=1.12.2
+[0m14:56:39.786466 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt run --select stg_mapping --profiles-dir .', 'partial_parse': 'True', 'no_print': 'None', 'warn_error': 'None', 'introspect': 'True', 'fail_fast': 'False', 'empty': 'False', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'version_check': 'True', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'write_json': 'True', 'cache_selected_only': 'False', 'printer_width': '80', 'profiles_dir': '.', 'use_colors': 'True', 'indirect_selection': 'eager', 'quiet': 'False', 'maximum_seed_size_mib': '1', 'log_format': 'default', 'use_experimental_parser': 'False', 'log_path': '/opt/airflow/include/logs', 'hints_enabled': 'True'}
+[0m14:56:40.087339 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ef3cc405-6860-42b4-9bfe-5b73736c1bfa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6d55e79220>]}
+[0m14:56:40.262759 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ef3cc405-6860-42b4-9bfe-5b73736c1bfa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6d48f03df0>]}
+[0m14:56:40.265894 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m14:56:40.369548 [debug] [MainThread]: checksum: abd22a93595a187da496bb2525a3e27287f0c8c6f4762e5b17fc3972fd556834, vars: {}, profile: osrs_ge_tracker, target: dev, version: 1.12.2
+[0m14:56:40.518703 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m14:56:40.520153 [debug] [MainThread]: Partial parsing: added file: osrs_ge_tracker://models/staging/stg_mapping.sql
+[0m14:56:40.913527 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ef3cc405-6860-42b4-9bfe-5b73736c1bfa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6d48dcc950>]}
+[0m14:56:41.064131 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/include/target/manifest.json
+[0m14:56:41.071976 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/include/target/semantic_manifest.json
+[0m14:56:41.092632 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/include/target/osi_document.json
+[0m14:56:41.110450 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ef3cc405-6860-42b4-9bfe-5b73736c1bfa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6d42a95c70>]}
+[0m14:56:41.111389 [info ] [MainThread]: Found 1 model, 2 sources, 500 macros
+[0m14:56:41.112181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ef3cc405-6860-42b4-9bfe-5b73736c1bfa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6d42aa9390>]}
+[0m14:56:41.114762 [info ] [MainThread]: 
+[0m14:56:41.116004 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:56:41.116782 [info ] [MainThread]: 
+[0m14:56:41.118011 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m14:56:41.120071 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_osrs'
+[0m14:56:41.188492 [debug] [ThreadPool]: Using duckdb connection "list_osrs"
+[0m14:56:41.189855 [debug] [ThreadPool]: On list_osrs: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "connection_name": "list_osrs"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"osrs"'
+    
+  
+  
+[0m14:56:41.190806 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:56:41.219174 [debug] [ThreadPool]: SQL status: OK in 0.028 seconds
+[0m14:56:41.221348 [debug] [ThreadPool]: On list_osrs: Close
+[0m14:56:41.222592 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_osrs, now create_osrs_main)
+[0m14:56:41.223486 [debug] [ThreadPool]: Creating schema "database: "osrs"
+schema: "main"
+"
+[0m14:56:41.232014 [debug] [ThreadPool]: Using duckdb connection "create_osrs_main"
+[0m14:56:41.233007 [debug] [ThreadPool]: On create_osrs_main: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "connection_name": "create_osrs_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='osrs'
+        and type != 'duckdb'
+    
+  
+[0m14:56:41.233794 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:56:41.235890 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m14:56:41.237672 [debug] [ThreadPool]: Using duckdb connection "create_osrs_main"
+[0m14:56:41.238391 [debug] [ThreadPool]: On create_osrs_main: BEGIN
+[0m14:56:41.239788 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:56:41.240446 [debug] [ThreadPool]: Using duckdb connection "create_osrs_main"
+[0m14:56:41.241083 [debug] [ThreadPool]: On create_osrs_main: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "connection_name": "create_osrs_main"} */
+
+    
+    
+        create schema if not exists "osrs"."main"
+    
+[0m14:56:41.242421 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:56:41.243914 [debug] [ThreadPool]: On create_osrs_main: COMMIT
+[0m14:56:41.244696 [debug] [ThreadPool]: Using duckdb connection "create_osrs_main"
+[0m14:56:41.245459 [debug] [ThreadPool]: On create_osrs_main: COMMIT
+[0m14:56:41.246600 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:56:41.247390 [debug] [ThreadPool]: On create_osrs_main: Close
+[0m14:56:41.249603 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_osrs_main, now list_osrs_main)
+[0m14:56:41.255324 [debug] [ThreadPool]: Using duckdb connection "list_osrs_main"
+[0m14:56:41.256405 [debug] [ThreadPool]: On list_osrs_main: BEGIN
+[0m14:56:41.257145 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:56:41.258556 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:56:41.259364 [debug] [ThreadPool]: Using duckdb connection "list_osrs_main"
+[0m14:56:41.260063 [debug] [ThreadPool]: On list_osrs_main: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "connection_name": "list_osrs_main"} */
+select
+      'osrs' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'osrs'
+  
+[0m14:56:41.263973 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m14:56:41.266279 [debug] [ThreadPool]: On list_osrs_main: ROLLBACK
+[0m14:56:41.267693 [debug] [ThreadPool]: On list_osrs_main: Close
+[0m14:56:41.269463 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ef3cc405-6860-42b4-9bfe-5b73736c1bfa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6cc3efa0d0>]}
+[0m14:56:41.270549 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:56:41.271327 [debug] [MainThread]: On master: BEGIN
+[0m14:56:41.272044 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:56:41.273597 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m14:56:41.274479 [debug] [MainThread]: On master: COMMIT
+[0m14:56:41.275328 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:56:41.276063 [debug] [MainThread]: On master: COMMIT
+[0m14:56:41.277394 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m14:56:41.278189 [debug] [MainThread]: On master: Close
+[0m14:56:41.282853 [debug] [Thread-1 (]: Began running node model.osrs_ge_tracker.stg_mapping
+[0m14:56:41.284151 [info ] [Thread-1 (]: 1 of 1 START sql view model main.stg_mapping ................................... [RUN]
+[0m14:56:41.285251 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_osrs_main, now model.osrs_ge_tracker.stg_mapping)
+[0m14:56:41.286212 [debug] [Thread-1 (]: Began compiling node model.osrs_ge_tracker.stg_mapping
+[0m14:56:41.293818 [debug] [Thread-1 (]: Writing injected SQL for node "model.osrs_ge_tracker.stg_mapping"
+[0m14:56:41.312526 [debug] [Thread-1 (]: Began executing node model.osrs_ge_tracker.stg_mapping
+[0m14:56:41.355848 [debug] [Thread-1 (]: Writing runtime sql for node "model.osrs_ge_tracker.stg_mapping"
+[0m14:56:41.375381 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_mapping"
+[0m14:56:41.376355 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_mapping: BEGIN
+[0m14:56:41.377117 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:56:41.378647 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:56:41.379535 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_mapping"
+[0m14:56:41.380263 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_mapping: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_mapping"} */
+
+  
+  create view "osrs"."main"."stg_mapping__dbt_tmp" as (
+    SELECT
+    id AS item_id,
+    name AS item_name,
+    examine AS item_description,
+    members,
+    lowalch,
+    highalch,
+    "value" AS item_value,
+    "limit" AS buy_limit,
+    icon,
+    loaded_at
+FROM "osrs"."main"."raw_mapping"
+  );
+
+[0m14:56:41.381806 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:56:41.388234 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_mapping"
+[0m14:56:41.389331 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_mapping: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_mapping"} */
+alter view "osrs"."main"."stg_mapping__dbt_tmp" rename to "stg_mapping"
+[0m14:56:41.391160 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:56:41.404561 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_mapping: COMMIT
+[0m14:56:41.405588 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_mapping"
+[0m14:56:41.406386 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_mapping: COMMIT
+[0m14:56:41.412689 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m14:56:41.422572 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_mapping"
+[0m14:56:41.423978 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_mapping: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_mapping"} */
+
+      drop view if exists "osrs"."main"."stg_mapping__dbt_backup" cascade
+    
+[0m14:56:41.425995 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:56:41.430171 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_mapping: Close
+[0m14:56:41.434628 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ef3cc405-6860-42b4-9bfe-5b73736c1bfa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6d42a47290>]}
+[0m14:56:41.436303 [info ] [Thread-1 (]: 1 of 1 OK created sql view model main.stg_mapping .............................. [[32mOK[0m in 0.15s]
+[0m14:56:41.437922 [debug] [Thread-1 (]: Finished running node model.osrs_ge_tracker.stg_mapping
+[0m14:56:41.441396 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:56:41.442563 [debug] [MainThread]: On master: BEGIN
+[0m14:56:41.443529 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:56:41.444894 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m14:56:41.445768 [debug] [MainThread]: On master: COMMIT
+[0m14:56:41.446510 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:56:41.447271 [debug] [MainThread]: On master: COMMIT
+[0m14:56:41.448635 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m14:56:41.449498 [debug] [MainThread]: On master: Close
+[0m14:56:41.450450 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:56:41.451201 [debug] [MainThread]: Connection 'model.osrs_ge_tracker.stg_mapping' was properly closed.
+[0m14:56:41.452037 [info ] [MainThread]: 
+[0m14:56:41.452953 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.33 seconds (0.33s).
+[0m14:56:41.454597 [debug] [MainThread]: Command end result
+[0m14:56:41.525402 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/include/target/manifest.json
+[0m14:56:41.533306 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/include/target/semantic_manifest.json
+[0m14:56:41.541419 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/include/target/osi_document.json
+[0m14:56:41.554661 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/include/target/run_results.json
+[0m14:56:41.555658 [info ] [MainThread]: 
+[0m14:56:41.556742 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:56:41.558048 [info ] [MainThread]: 
+[0m14:56:41.559214 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m14:56:41.561418 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.8983792, "process_in_blocks": "3648", "process_kernel_time": 0.357023, "process_mem_max_rss": "174208", "process_out_blocks": "200", "process_user_time": 3.201172}
+[0m14:56:41.562669 [debug] [MainThread]: Command `dbt run` succeeded at 14:56:41.562494 after 1.90 seconds
+[0m14:56:41.563747 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6d42a92780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6cc3d5efd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6cc3d5f1b0>]}
+[0m14:56:41.564674 [debug] [MainThread]: Flushing usage events
+[0m14:56:41.848171 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:58:15.502903 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75861c57ae40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75861b003ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75861b003b10>]}
+
+
+============================== 14:58:15.506878 | be2ac08f-718a-48df-a3cf-754f20bc85b7 ==============================
+[0m14:58:15.506878 [info ] [MainThread]: Running with dbt=1.12.2
+[0m14:58:15.507871 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'quiet': 'False', 'maximum_seed_size_mib': '1', 'profiles_dir': '.', 'empty': 'False', 'introspect': 'True', 'printer_width': '80', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'log_path': '/opt/airflow/include/logs', 'warn_error': 'None', 'write_json': 'True', 'debug': 'False', 'version_check': 'True', 'fail_fast': 'False', 'hints_enabled': 'True', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt run --select stg_mapping --profiles-dir .', 'no_print': 'None', 'partial_parse': 'True', 'log_cache_events': 'False', 'target_path': 'None'}
+[0m14:58:15.782750 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'be2ac08f-718a-48df-a3cf-754f20bc85b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75861c0a5220>]}
+[0m14:58:15.931820 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'be2ac08f-718a-48df-a3cf-754f20bc85b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75861af63df0>]}
+[0m14:58:15.935101 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m14:58:16.030850 [debug] [MainThread]: checksum: abd22a93595a187da496bb2525a3e27287f0c8c6f4762e5b17fc3972fd556834, vars: {}, profile: osrs_ge_tracker, target: dev, version: 1.12.2
+[0m14:58:16.186209 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m14:58:16.187380 [debug] [MainThread]: Partial parsing: updated file: osrs_ge_tracker://models/staging/stg_mapping.sql
+[0m14:58:16.498381 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'be2ac08f-718a-48df-a3cf-754f20bc85b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7585f2bb8050>]}
+[0m14:58:16.648030 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/include/target/manifest.json
+[0m14:58:16.655179 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/include/target/semantic_manifest.json
+[0m14:58:16.675481 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/include/target/osi_document.json
+[0m14:58:16.692213 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'be2ac08f-718a-48df-a3cf-754f20bc85b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7585f2b41b80>]}
+[0m14:58:16.693198 [info ] [MainThread]: Found 1 model, 2 sources, 500 macros
+[0m14:58:16.694181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'be2ac08f-718a-48df-a3cf-754f20bc85b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7585f2ba4e50>]}
+[0m14:58:16.696481 [info ] [MainThread]: 
+[0m14:58:16.697713 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:58:16.698771 [info ] [MainThread]: 
+[0m14:58:16.700495 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m14:58:16.702804 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_osrs'
+[0m14:58:16.745586 [debug] [ThreadPool]: Using duckdb connection "list_osrs"
+[0m14:58:16.746792 [debug] [ThreadPool]: On list_osrs: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "connection_name": "list_osrs"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"osrs"'
+    
+  
+  
+[0m14:58:16.747673 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:58:16.777352 [debug] [ThreadPool]: SQL status: OK in 0.030 seconds
+[0m14:58:16.779707 [debug] [ThreadPool]: On list_osrs: Close
+[0m14:58:16.781286 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_osrs, now create_osrs_main)
+[0m14:58:16.782426 [debug] [ThreadPool]: Creating schema "database: "osrs"
+schema: "main"
+"
+[0m14:58:16.794812 [debug] [ThreadPool]: Using duckdb connection "create_osrs_main"
+[0m14:58:16.796014 [debug] [ThreadPool]: On create_osrs_main: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "connection_name": "create_osrs_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='osrs'
+        and type != 'duckdb'
+    
+  
+[0m14:58:16.796942 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:58:16.799013 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m14:58:16.800956 [debug] [ThreadPool]: Using duckdb connection "create_osrs_main"
+[0m14:58:16.801835 [debug] [ThreadPool]: On create_osrs_main: BEGIN
+[0m14:58:16.803337 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:58:16.804191 [debug] [ThreadPool]: Using duckdb connection "create_osrs_main"
+[0m14:58:16.804915 [debug] [ThreadPool]: On create_osrs_main: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "connection_name": "create_osrs_main"} */
+
+    
+    
+        create schema if not exists "osrs"."main"
+    
+[0m14:58:16.806323 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:58:16.807656 [debug] [ThreadPool]: On create_osrs_main: COMMIT
+[0m14:58:16.808410 [debug] [ThreadPool]: Using duckdb connection "create_osrs_main"
+[0m14:58:16.809201 [debug] [ThreadPool]: On create_osrs_main: COMMIT
+[0m14:58:16.810422 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:58:16.811321 [debug] [ThreadPool]: On create_osrs_main: Close
+[0m14:58:16.813648 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_osrs_main, now list_osrs_main)
+[0m14:58:16.819825 [debug] [ThreadPool]: Using duckdb connection "list_osrs_main"
+[0m14:58:16.820973 [debug] [ThreadPool]: On list_osrs_main: BEGIN
+[0m14:58:16.821707 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:58:16.823271 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m14:58:16.824145 [debug] [ThreadPool]: Using duckdb connection "list_osrs_main"
+[0m14:58:16.825019 [debug] [ThreadPool]: On list_osrs_main: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "connection_name": "list_osrs_main"} */
+select
+      'osrs' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'osrs'
+  
+[0m14:58:16.829047 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m14:58:16.831092 [debug] [ThreadPool]: On list_osrs_main: ROLLBACK
+[0m14:58:16.832672 [debug] [ThreadPool]: On list_osrs_main: Close
+[0m14:58:16.834917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'be2ac08f-718a-48df-a3cf-754f20bc85b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7585f2005f30>]}
+[0m14:58:16.836186 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:58:16.836978 [debug] [MainThread]: On master: BEGIN
+[0m14:58:16.837701 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:58:16.839162 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m14:58:16.840000 [debug] [MainThread]: On master: COMMIT
+[0m14:58:16.840769 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:58:16.841548 [debug] [MainThread]: On master: COMMIT
+[0m14:58:16.842758 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:58:16.843638 [debug] [MainThread]: On master: Close
+[0m14:58:16.846879 [debug] [Thread-1 (]: Began running node model.osrs_ge_tracker.stg_mapping
+[0m14:58:16.847976 [info ] [Thread-1 (]: 1 of 1 START sql view model main.stg_mapping ................................... [RUN]
+[0m14:58:16.849109 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_osrs_main, now model.osrs_ge_tracker.stg_mapping)
+[0m14:58:16.849994 [debug] [Thread-1 (]: Began compiling node model.osrs_ge_tracker.stg_mapping
+[0m14:58:16.857386 [debug] [Thread-1 (]: Writing injected SQL for node "model.osrs_ge_tracker.stg_mapping"
+[0m14:58:16.866425 [debug] [Thread-1 (]: Began executing node model.osrs_ge_tracker.stg_mapping
+[0m14:58:16.904571 [debug] [Thread-1 (]: Writing runtime sql for node "model.osrs_ge_tracker.stg_mapping"
+[0m14:58:16.913831 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_mapping"
+[0m14:58:16.914725 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_mapping: BEGIN
+[0m14:58:16.915552 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:58:16.917316 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m14:58:16.918439 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_mapping"
+[0m14:58:16.919369 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_mapping: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_mapping"} */
+
+  
+  create view "osrs"."main"."stg_mapping__dbt_tmp" as (
+    SELECT
+    id AS item_id,
+    name AS item_name,
+    examine AS item_description,
+    members,
+    lowalch,
+    highalch,
+    "value" AS item_value,
+    "limit" AS buy_limit,
+    loaded_at
+FROM "osrs"."main"."raw_mapping"
+  );
+
+[0m14:58:16.921157 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:58:16.927911 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_mapping"
+[0m14:58:16.929027 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_mapping: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_mapping"} */
+alter view "osrs"."main"."stg_mapping" rename to "stg_mapping__dbt_backup"
+[0m14:58:16.930607 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:58:16.933916 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_mapping"
+[0m14:58:16.934996 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_mapping: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_mapping"} */
+alter view "osrs"."main"."stg_mapping__dbt_tmp" rename to "stg_mapping"
+[0m14:58:16.936802 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:58:16.961340 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_mapping: COMMIT
+[0m14:58:16.962497 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_mapping"
+[0m14:58:16.963627 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_mapping: COMMIT
+[0m14:58:16.970913 [debug] [Thread-1 (]: SQL status: OK in 0.006 seconds
+[0m14:58:16.977556 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_mapping"
+[0m14:58:16.978805 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_mapping: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_mapping"} */
+
+      drop view if exists "osrs"."main"."stg_mapping__dbt_backup" cascade
+    
+[0m14:58:16.983641 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m14:58:16.987483 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_mapping: Close
+[0m14:58:16.990202 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'be2ac08f-718a-48df-a3cf-754f20bc85b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7585f2b22c90>]}
+[0m14:58:16.991762 [info ] [Thread-1 (]: 1 of 1 OK created sql view model main.stg_mapping .............................. [[32mOK[0m in 0.14s]
+[0m14:58:16.993102 [debug] [Thread-1 (]: Finished running node model.osrs_ge_tracker.stg_mapping
+[0m14:58:16.996081 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:58:16.996995 [debug] [MainThread]: On master: BEGIN
+[0m14:58:16.997631 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:58:16.999249 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m14:58:17.000294 [debug] [MainThread]: On master: COMMIT
+[0m14:58:17.001275 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:58:17.002193 [debug] [MainThread]: On master: COMMIT
+[0m14:58:17.003551 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m14:58:17.004496 [debug] [MainThread]: On master: Close
+[0m14:58:17.005608 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:58:17.006250 [debug] [MainThread]: Connection 'model.osrs_ge_tracker.stg_mapping' was properly closed.
+[0m14:58:17.006905 [info ] [MainThread]: 
+[0m14:58:17.007786 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.31 seconds (0.31s).
+[0m14:58:17.009072 [debug] [MainThread]: Command end result
+[0m14:58:17.083013 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/include/target/manifest.json
+[0m14:58:17.090665 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/include/target/semantic_manifest.json
+[0m14:58:17.097089 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/include/target/osi_document.json
+[0m14:58:17.110290 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/include/target/run_results.json
+[0m14:58:17.111535 [info ] [MainThread]: 
+[0m14:58:17.113037 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:58:17.114359 [info ] [MainThread]: 
+[0m14:58:17.115893 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m14:58:17.118438 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.7139043, "process_in_blocks": "1661", "process_kernel_time": 0.356379, "process_mem_max_rss": "173588", "process_out_blocks": "0", "process_user_time": 2.843024}
+[0m14:58:17.120235 [debug] [MainThread]: Command `dbt run` succeeded at 14:58:17.120089 after 1.72 seconds
+[0m14:58:17.121330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7585f2b46150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7585f1efa0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7585f1ef98b0>]}
+[0m14:58:17.122382 [debug] [MainThread]: Flushing usage events
+[0m14:58:17.355938 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:27:23.130399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72bf300eee40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72bf2eb77ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72bf2eb77b10>]}
+
+
+============================== 15:27:23.134345 | 7b0853b9-5778-40fc-9fb6-2bb456a6a9af ==============================
+[0m15:27:23.134345 [info ] [MainThread]: Running with dbt=1.12.2
+[0m15:27:23.135438 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'printer_width': '80', 'log_path': '/opt/airflow/include/logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'target_path': 'None', 'use_colors': 'True', 'fail_fast': 'False', 'invocation_command': 'dbt run --select stg_5m_prices --profiles-dir .', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'introspect': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'log_format': 'default', 'debug': 'False', 'empty': 'False', 'indirect_selection': 'eager', 'write_json': 'True', 'profiles_dir': '.', 'version_check': 'True', 'hints_enabled': 'True', 'static_parser': 'True'}
+[0m15:27:23.403837 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7b0853b9-5778-40fc-9fb6-2bb456a6a9af', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72bf2fc1d220>]}
+[0m15:27:23.551919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7b0853b9-5778-40fc-9fb6-2bb456a6a9af', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72bf2ead7df0>]}
+[0m15:27:23.555040 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m15:27:23.646629 [debug] [MainThread]: checksum: abd22a93595a187da496bb2525a3e27287f0c8c6f4762e5b17fc3972fd556834, vars: {}, profile: osrs_ge_tracker, target: dev, version: 1.12.2
+[0m15:27:23.812798 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m15:27:23.814013 [debug] [MainThread]: Partial parsing: added file: osrs_ge_tracker://models/staging/stg_5m_prices.sql
+[0m15:27:24.153379 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7b0853b9-5778-40fc-9fb6-2bb456a6a9af', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72beda7d8050>]}
+[0m15:27:24.301388 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/include/target/manifest.json
+[0m15:27:24.308471 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/include/target/semantic_manifest.json
+[0m15:27:24.326907 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/include/target/osi_document.json
+[0m15:27:24.344414 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7b0853b9-5778-40fc-9fb6-2bb456a6a9af', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72beda74dc70>]}
+[0m15:27:24.345663 [info ] [MainThread]: Found 2 models, 2 sources, 500 macros
+[0m15:27:24.346769 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7b0853b9-5778-40fc-9fb6-2bb456a6a9af', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72beda76d1d0>]}
+[0m15:27:24.349250 [info ] [MainThread]: 
+[0m15:27:24.350375 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:27:24.351696 [info ] [MainThread]: 
+[0m15:27:24.353386 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m15:27:24.355296 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_osrs'
+[0m15:27:24.399072 [debug] [ThreadPool]: Using duckdb connection "list_osrs"
+[0m15:27:24.400270 [debug] [ThreadPool]: On list_osrs: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "connection_name": "list_osrs"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"osrs"'
+    
+  
+  
+[0m15:27:24.401190 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:27:24.430201 [debug] [ThreadPool]: SQL status: OK in 0.029 seconds
+[0m15:27:24.432411 [debug] [ThreadPool]: On list_osrs: Close
+[0m15:27:24.434146 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_osrs, now create_osrs_main)
+[0m15:27:24.435316 [debug] [ThreadPool]: Creating schema "database: "osrs"
+schema: "main"
+"
+[0m15:27:24.444500 [debug] [ThreadPool]: Using duckdb connection "create_osrs_main"
+[0m15:27:24.445683 [debug] [ThreadPool]: On create_osrs_main: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "connection_name": "create_osrs_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='osrs'
+        and type != 'duckdb'
+    
+  
+[0m15:27:24.446483 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:27:24.448550 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m15:27:24.450633 [debug] [ThreadPool]: Using duckdb connection "create_osrs_main"
+[0m15:27:24.451917 [debug] [ThreadPool]: On create_osrs_main: BEGIN
+[0m15:27:24.453872 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m15:27:24.454794 [debug] [ThreadPool]: Using duckdb connection "create_osrs_main"
+[0m15:27:24.455616 [debug] [ThreadPool]: On create_osrs_main: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "connection_name": "create_osrs_main"} */
+
+    
+    
+        create schema if not exists "osrs"."main"
+    
+[0m15:27:24.457156 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m15:27:24.458720 [debug] [ThreadPool]: On create_osrs_main: COMMIT
+[0m15:27:24.459572 [debug] [ThreadPool]: Using duckdb connection "create_osrs_main"
+[0m15:27:24.460287 [debug] [ThreadPool]: On create_osrs_main: COMMIT
+[0m15:27:24.461423 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:27:24.462209 [debug] [ThreadPool]: On create_osrs_main: Close
+[0m15:27:24.469240 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_osrs_main, now list_osrs_main)
+[0m15:27:24.475134 [debug] [ThreadPool]: Using duckdb connection "list_osrs_main"
+[0m15:27:24.476208 [debug] [ThreadPool]: On list_osrs_main: BEGIN
+[0m15:27:24.476988 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:27:24.478775 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m15:27:24.479817 [debug] [ThreadPool]: Using duckdb connection "list_osrs_main"
+[0m15:27:24.480637 [debug] [ThreadPool]: On list_osrs_main: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "connection_name": "list_osrs_main"} */
+select
+      'osrs' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'osrs'
+  
+[0m15:27:24.485252 [debug] [ThreadPool]: SQL status: OK in 0.004 seconds
+[0m15:27:24.487838 [debug] [ThreadPool]: On list_osrs_main: ROLLBACK
+[0m15:27:24.489698 [debug] [ThreadPool]: On list_osrs_main: Close
+[0m15:27:24.492113 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7b0853b9-5778-40fc-9fb6-2bb456a6a9af', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72bed9bfdf30>]}
+[0m15:27:24.493351 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:27:24.494148 [debug] [MainThread]: On master: BEGIN
+[0m15:27:24.494917 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:27:24.496473 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m15:27:24.497442 [debug] [MainThread]: On master: COMMIT
+[0m15:27:24.498333 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:27:24.499194 [debug] [MainThread]: On master: COMMIT
+[0m15:27:24.500925 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m15:27:24.502225 [debug] [MainThread]: On master: Close
+[0m15:27:24.506951 [debug] [Thread-1 (]: Began running node model.osrs_ge_tracker.stg_5m_prices
+[0m15:27:24.508446 [info ] [Thread-1 (]: 1 of 1 START sql view model main.stg_5m_prices ................................. [RUN]
+[0m15:27:24.510042 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_osrs_main, now model.osrs_ge_tracker.stg_5m_prices)
+[0m15:27:24.511192 [debug] [Thread-1 (]: Began compiling node model.osrs_ge_tracker.stg_5m_prices
+[0m15:27:24.519869 [debug] [Thread-1 (]: Writing injected SQL for node "model.osrs_ge_tracker.stg_5m_prices"
+[0m15:27:24.529732 [debug] [Thread-1 (]: Began executing node model.osrs_ge_tracker.stg_5m_prices
+[0m15:27:24.565854 [debug] [Thread-1 (]: Writing runtime sql for node "model.osrs_ge_tracker.stg_5m_prices"
+[0m15:27:24.575120 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_5m_prices"
+[0m15:27:24.576128 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: BEGIN
+[0m15:27:24.577190 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:27:24.579106 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:27:24.580243 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_5m_prices"
+[0m15:27:24.581084 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_5m_prices"} */
+
+  
+  create view "osrs"."main"."stg_5m_prices__dbt_tmp" as (
+    WITH deduped AS (
+    SELECT
+        data,
+        "timestamp" AS price_timestamp,
+        loaded_at
+    FROM "osrs"."main"."raw_5m_prices"
+    qualify row_number() OVER (PARTITION BY "timestamp" ORDER BY loaded_at asc) = 1
+),
+exploded AS (
+    SELECT
+        d.price_timestamp,
+        d.loaded_at,
+        item.key AS item_id,
+        item.value ->> 'avgHighPrice' AS avg_high_price,
+        item.value ->> 'highPriceVolume' AS high_price_volume,
+        item.value ->> 'avgLowPrice' AS avg_low_price,
+        item.value ->> 'lowPriceVolume' AS low_price_volume
+    FROM deduped d, json_each(d.data) AS item
+)
+
+SELECT
+    CAST(item_id AS bigint) AS item_id,
+    price_timestamp,
+    CAST(avg_high_price AS bigint) AS avg_high_price,
+    CAST(high_price_volume AS bigint) AS high_price_volume,
+    CAST(avg_low_price AS bigint) AS avg_low_price,
+    CAST(low_price_volume AS bigint) AS low_price_volume,
+    loaded_at
+FROM exploded
+  );
+
+[0m15:27:24.583234 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:27:24.590997 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_5m_prices"
+[0m15:27:24.592330 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_5m_prices"} */
+alter view "osrs"."main"."stg_5m_prices__dbt_tmp" rename to "stg_5m_prices"
+[0m15:27:24.594038 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:27:24.609582 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: COMMIT
+[0m15:27:24.610817 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_5m_prices"
+[0m15:27:24.611826 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: COMMIT
+[0m15:27:24.618248 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m15:27:24.625171 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_5m_prices"
+[0m15:27:24.626490 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_5m_prices"} */
+
+      drop view if exists "osrs"."main"."stg_5m_prices__dbt_backup" cascade
+    
+[0m15:27:24.628595 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:27:24.638647 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: Close
+[0m15:27:24.641542 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7b0853b9-5778-40fc-9fb6-2bb456a6a9af', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72beda72f590>]}
+[0m15:27:24.643015 [info ] [Thread-1 (]: 1 of 1 OK created sql view model main.stg_5m_prices ............................ [[32mOK[0m in 0.13s]
+[0m15:27:24.644231 [debug] [Thread-1 (]: Finished running node model.osrs_ge_tracker.stg_5m_prices
+[0m15:27:24.647053 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:27:24.648133 [debug] [MainThread]: On master: BEGIN
+[0m15:27:24.649177 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:27:24.650982 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m15:27:24.652031 [debug] [MainThread]: On master: COMMIT
+[0m15:27:24.653118 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:27:24.653930 [debug] [MainThread]: On master: COMMIT
+[0m15:27:24.655229 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:27:24.656249 [debug] [MainThread]: On master: Close
+[0m15:27:24.657500 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:27:24.658312 [debug] [MainThread]: Connection 'model.osrs_ge_tracker.stg_5m_prices' was properly closed.
+[0m15:27:24.659204 [info ] [MainThread]: 
+[0m15:27:24.660122 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.31 seconds (0.31s).
+[0m15:27:24.661796 [debug] [MainThread]: Command end result
+[0m15:27:24.732617 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/include/target/manifest.json
+[0m15:27:24.740347 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/include/target/semantic_manifest.json
+[0m15:27:24.747622 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/include/target/osi_document.json
+[0m15:27:24.761064 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/include/target/run_results.json
+[0m15:27:24.761970 [info ] [MainThread]: 
+[0m15:27:24.762956 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:27:24.763854 [info ] [MainThread]: 
+[0m15:27:24.764964 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m15:27:24.767018 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.7320752, "process_in_blocks": "1662", "process_kernel_time": 0.289102, "process_mem_max_rss": "174412", "process_out_blocks": "0", "process_user_time": 2.83079}
+[0m15:27:24.768799 [debug] [MainThread]: Command `dbt run` succeeded at 15:27:24.768566 after 1.73 seconds
+[0m15:27:24.770506 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72beda766780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72bed9af99f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72bed9afa0d0>]}
+[0m15:27:24.771574 [debug] [MainThread]: Flushing usage events
+[0m15:27:25.130532 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:39:15.869159 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c8c2e4d2e40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c8c2cf67ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c8c2cf67b10>]}
+
+
+============================== 15:39:15.873990 | 19966541-3c9a-48d8-ae5d-9a796a0df4be ==============================
+[0m15:39:15.873990 [info ] [MainThread]: Running with dbt=1.12.2
+[0m15:39:15.875107 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'debug': 'False', 'invocation_command': 'dbt run --select stg_5m_prices --profiles-dir .', 'partial_parse': 'True', 'hints_enabled': 'True', 'static_parser': 'True', 'empty': 'False', 'use_experimental_parser': 'False', 'no_print': 'None', 'use_colors': 'True', 'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'version_check': 'True', 'log_format': 'default', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'profiles_dir': '.', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'log_path': '/opt/airflow/include/logs', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'introspect': 'True', 'fail_fast': 'False'}
+[0m15:39:16.150653 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '19966541-3c9a-48d8-ae5d-9a796a0df4be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c8c2e001220>]}
+[0m15:39:16.291563 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '19966541-3c9a-48d8-ae5d-9a796a0df4be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c8c2cebfdf0>]}
+[0m15:39:16.294572 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m15:39:16.389743 [debug] [MainThread]: checksum: abd22a93595a187da496bb2525a3e27287f0c8c6f4762e5b17fc3972fd556834, vars: {}, profile: osrs_ge_tracker, target: dev, version: 1.12.2
+[0m15:39:16.561928 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:39:16.563243 [debug] [MainThread]: Partial parsing: updated file: osrs_ge_tracker://models/staging/stg_5m_prices.sql
+[0m15:39:16.890696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '19966541-3c9a-48d8-ae5d-9a796a0df4be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c8c00cd4050>]}
+[0m15:39:17.028629 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/include/target/manifest.json
+[0m15:39:17.035859 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/include/target/semantic_manifest.json
+[0m15:39:17.054687 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/include/target/osi_document.json
+[0m15:39:17.069933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '19966541-3c9a-48d8-ae5d-9a796a0df4be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c8c00c51c70>]}
+[0m15:39:17.070914 [info ] [MainThread]: Found 2 models, 2 sources, 500 macros
+[0m15:39:17.071702 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '19966541-3c9a-48d8-ae5d-9a796a0df4be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c8c00c990f0>]}
+[0m15:39:17.074240 [info ] [MainThread]: 
+[0m15:39:17.075119 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:39:17.076026 [info ] [MainThread]: 
+[0m15:39:17.077343 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m15:39:17.078875 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_osrs'
+[0m15:39:17.123342 [debug] [ThreadPool]: Using duckdb connection "list_osrs"
+[0m15:39:17.124366 [debug] [ThreadPool]: On list_osrs: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "connection_name": "list_osrs"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"osrs"'
+    
+  
+  
+[0m15:39:17.125011 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:39:17.151104 [debug] [ThreadPool]: SQL status: OK in 0.026 seconds
+[0m15:39:17.153276 [debug] [ThreadPool]: On list_osrs: Close
+[0m15:39:17.154550 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_osrs, now create_osrs_main)
+[0m15:39:17.155380 [debug] [ThreadPool]: Creating schema "database: "osrs"
+schema: "main"
+"
+[0m15:39:17.163078 [debug] [ThreadPool]: Using duckdb connection "create_osrs_main"
+[0m15:39:17.163841 [debug] [ThreadPool]: On create_osrs_main: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "connection_name": "create_osrs_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='osrs'
+        and type != 'duckdb'
+    
+  
+[0m15:39:17.164574 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:39:17.166531 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m15:39:17.168447 [debug] [ThreadPool]: Using duckdb connection "create_osrs_main"
+[0m15:39:17.169140 [debug] [ThreadPool]: On create_osrs_main: BEGIN
+[0m15:39:17.170379 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m15:39:17.171042 [debug] [ThreadPool]: Using duckdb connection "create_osrs_main"
+[0m15:39:17.171685 [debug] [ThreadPool]: On create_osrs_main: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "connection_name": "create_osrs_main"} */
+
+    
+    
+        create schema if not exists "osrs"."main"
+    
+[0m15:39:17.172853 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m15:39:17.174063 [debug] [ThreadPool]: On create_osrs_main: COMMIT
+[0m15:39:17.174761 [debug] [ThreadPool]: Using duckdb connection "create_osrs_main"
+[0m15:39:17.175374 [debug] [ThreadPool]: On create_osrs_main: COMMIT
+[0m15:39:17.176325 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:39:17.176967 [debug] [ThreadPool]: On create_osrs_main: Close
+[0m15:39:17.183363 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_osrs_main, now list_osrs_main)
+[0m15:39:17.188922 [debug] [ThreadPool]: Using duckdb connection "list_osrs_main"
+[0m15:39:17.189747 [debug] [ThreadPool]: On list_osrs_main: BEGIN
+[0m15:39:17.190420 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:39:17.191672 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m15:39:17.192312 [debug] [ThreadPool]: Using duckdb connection "list_osrs_main"
+[0m15:39:17.192946 [debug] [ThreadPool]: On list_osrs_main: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "connection_name": "list_osrs_main"} */
+select
+      'osrs' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'osrs'
+  
+[0m15:39:17.196892 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m15:39:17.199219 [debug] [ThreadPool]: On list_osrs_main: ROLLBACK
+[0m15:39:17.200781 [debug] [ThreadPool]: On list_osrs_main: Close
+[0m15:39:17.203302 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '19966541-3c9a-48d8-ae5d-9a796a0df4be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c8c000f9e60>]}
+[0m15:39:17.204262 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:39:17.204975 [debug] [MainThread]: On master: BEGIN
+[0m15:39:17.205623 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:39:17.206842 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m15:39:17.207510 [debug] [MainThread]: On master: COMMIT
+[0m15:39:17.208181 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:39:17.208856 [debug] [MainThread]: On master: COMMIT
+[0m15:39:17.209831 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:39:17.210538 [debug] [MainThread]: On master: Close
+[0m15:39:17.213757 [debug] [Thread-1 (]: Began running node model.osrs_ge_tracker.stg_5m_prices
+[0m15:39:17.214805 [info ] [Thread-1 (]: 1 of 1 START sql table model main.stg_5m_prices ................................ [RUN]
+[0m15:39:17.215778 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_osrs_main, now model.osrs_ge_tracker.stg_5m_prices)
+[0m15:39:17.216829 [debug] [Thread-1 (]: Began compiling node model.osrs_ge_tracker.stg_5m_prices
+[0m15:39:17.224291 [debug] [Thread-1 (]: Writing injected SQL for node "model.osrs_ge_tracker.stg_5m_prices"
+[0m15:39:17.231883 [debug] [Thread-1 (]: Began executing node model.osrs_ge_tracker.stg_5m_prices
+[0m15:39:17.285407 [debug] [Thread-1 (]: Writing runtime sql for node "model.osrs_ge_tracker.stg_5m_prices"
+[0m15:39:17.293335 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_5m_prices"
+[0m15:39:17.294077 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: BEGIN
+[0m15:39:17.294787 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:39:17.296243 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:39:17.296927 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_5m_prices"
+[0m15:39:17.297662 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_5m_prices"} */
+
+    
+
+    create  table
+      "osrs"."main"."stg_5m_prices__dbt_tmp"
+  
+    
+    as (
+      
+
+WITH deduped AS (
+    SELECT
+        data,
+        "timestamp" AS price_timestamp,
+        loaded_at
+    FROM "osrs"."main"."raw_5m_prices"
+    qualify row_number() OVER (PARTITION BY "timestamp" ORDER BY loaded_at asc) = 1
+),
+exploded AS (
+    SELECT
+        d.price_timestamp,
+        d.loaded_at,
+        item.key AS item_id,
+        item.value ->> 'avgHighPrice' AS avg_high_price,
+        item.value ->> 'highPriceVolume' AS high_price_volume,
+        item.value ->> 'avgLowPrice' AS avg_low_price,
+        item.value ->> 'lowPriceVolume' AS low_price_volume
+    FROM deduped d, json_each(d.data) AS item
+)
+
+SELECT
+    CAST(item_id AS bigint) AS item_id,
+    price_timestamp,
+    CAST(avg_high_price AS bigint) AS avg_high_price,
+    CAST(high_price_volume AS bigint) AS high_price_volume,
+    CAST(avg_low_price AS bigint) AS avg_low_price,
+    CAST(low_price_volume AS bigint) AS low_price_volume,
+    loaded_at
+FROM exploded
+    );
+    
+  
+[0m15:39:18.522269 [debug] [Thread-1 (]: SQL status: OK in 1.224 seconds
+[0m15:39:18.528229 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_5m_prices"
+[0m15:39:18.528994 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_5m_prices"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE database_name = 'osrs'
+      AND schema_name = 'main'
+      AND table_name = 'stg_5m_prices'
+  
+[0m15:39:18.530622 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:39:18.537140 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_5m_prices"
+[0m15:39:18.538342 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_5m_prices"} */
+alter view "osrs"."main"."stg_5m_prices" rename to "stg_5m_prices__dbt_backup"
+[0m15:39:18.539842 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:39:18.542624 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_5m_prices"
+[0m15:39:18.543362 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_5m_prices"} */
+alter table "osrs"."main"."stg_5m_prices__dbt_tmp" rename to "stg_5m_prices"
+[0m15:39:18.544560 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:39:18.568892 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: COMMIT
+[0m15:39:18.570247 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_5m_prices"
+[0m15:39:18.571094 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: COMMIT
+[0m15:39:18.589781 [debug] [Thread-1 (]: SQL status: OK in 0.018 seconds
+[0m15:39:18.595385 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_5m_prices"
+[0m15:39:18.596119 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_5m_prices"} */
+
+      drop view if exists "osrs"."main"."stg_5m_prices__dbt_backup" cascade
+    
+[0m15:39:18.600007 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:39:18.603705 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: Close
+[0m15:39:18.606112 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '19966541-3c9a-48d8-ae5d-9a796a0df4be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c8c00c2b890>]}
+[0m15:39:18.607321 [info ] [Thread-1 (]: 1 of 1 OK created sql table model main.stg_5m_prices ........................... [[32mOK[0m in 1.39s]
+[0m15:39:18.608318 [debug] [Thread-1 (]: Finished running node model.osrs_ge_tracker.stg_5m_prices
+[0m15:39:18.611029 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:39:18.611827 [debug] [MainThread]: On master: BEGIN
+[0m15:39:18.612495 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:39:18.613769 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m15:39:18.614465 [debug] [MainThread]: On master: COMMIT
+[0m15:39:18.615118 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:39:18.615763 [debug] [MainThread]: On master: COMMIT
+[0m15:39:18.617150 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:39:18.618131 [debug] [MainThread]: On master: Close
+[0m15:39:18.619129 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:39:18.619996 [debug] [MainThread]: Connection 'model.osrs_ge_tracker.stg_5m_prices' was properly closed.
+[0m15:39:18.620843 [info ] [MainThread]: 
+[0m15:39:18.621694 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 1.54 seconds (1.54s).
+[0m15:39:18.622916 [debug] [MainThread]: Command end result
+[0m15:39:18.692257 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/include/target/manifest.json
+[0m15:39:18.698510 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/include/target/semantic_manifest.json
+[0m15:39:18.705570 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/include/target/osi_document.json
+[0m15:39:18.716470 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/include/target/run_results.json
+[0m15:39:18.717355 [info ] [MainThread]: 
+[0m15:39:18.718328 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:39:18.719219 [info ] [MainThread]: 
+[0m15:39:18.720226 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m15:39:18.721950 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 2.94931, "process_in_blocks": "60404", "process_kernel_time": 0.455798, "process_mem_max_rss": "295032", "process_out_blocks": "0", "process_user_time": 5.06976}
+[0m15:39:18.722913 [debug] [MainThread]: Command `dbt run` succeeded at 15:39:18.722806 after 2.95 seconds
+[0m15:39:18.723708 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c8c00c5a0a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c8c0017af30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c8c0017acb0>]}
+[0m15:39:18.724440 [debug] [MainThread]: Flushing usage events
+[0m15:39:18.936178 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:56:23.846102 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x758af0c1ee40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x758aef6a7ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x758aef6a7b10>]}
+
+
+============================== 16:56:23.850757 | 4785c40d-9578-4fc6-b592-2edbaa1ca5fd ==============================
+[0m16:56:23.850757 [info ] [MainThread]: Running with dbt=1.12.2
+[0m16:56:23.851775 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'write_json': 'True', 'empty': 'False', 'printer_width': '80', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'profiles_dir': '.', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'invocation_command': 'dbt run --profiles-dir .', 'version_check': 'True', 'no_print': 'None', 'debug': 'False', 'log_cache_events': 'False', 'quiet': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'log_path': '/opt/airflow/include/logs', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'indirect_selection': 'eager', 'maximum_seed_size_mib': '1', 'hints_enabled': 'True'}
+[0m16:56:24.123565 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4785c40d-9578-4fc6-b592-2edbaa1ca5fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x758af074d220>]}
+[0m16:56:24.278165 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4785c40d-9578-4fc6-b592-2edbaa1ca5fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x758aef607df0>]}
+[0m16:56:24.281416 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m16:56:24.375293 [debug] [MainThread]: checksum: abd22a93595a187da496bb2525a3e27287f0c8c6f4762e5b17fc3972fd556834, vars: {}, profile: osrs_ge_tracker, target: dev, version: 1.12.2
+[0m16:56:24.551085 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:56:24.552210 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m16:56:24.552890 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:56:24.563809 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4785c40d-9578-4fc6-b592-2edbaa1ca5fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x758ae3693c50>]}
+[0m16:56:24.726186 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/include/target/manifest.json
+[0m16:56:24.733179 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/include/target/semantic_manifest.json
+[0m16:56:24.751369 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/include/target/osi_document.json
+[0m16:56:24.766987 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4785c40d-9578-4fc6-b592-2edbaa1ca5fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x758ae143d040>]}
+[0m16:56:24.767952 [info ] [MainThread]: Found 2 models, 2 sources, 500 macros
+[0m16:56:24.768757 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4785c40d-9578-4fc6-b592-2edbaa1ca5fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x758ae146b770>]}
+[0m16:56:24.771030 [info ] [MainThread]: 
+[0m16:56:24.771834 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:56:24.772661 [info ] [MainThread]: 
+[0m16:56:24.773600 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m16:56:24.778940 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_osrs'
+[0m16:56:24.823793 [debug] [ThreadPool]: Using duckdb connection "list_osrs"
+[0m16:56:24.824854 [debug] [ThreadPool]: On list_osrs: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "connection_name": "list_osrs"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"osrs"'
+    
+  
+  
+[0m16:56:24.825551 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:56:24.853277 [debug] [ThreadPool]: SQL status: OK in 0.028 seconds
+[0m16:56:24.855419 [debug] [ThreadPool]: On list_osrs: Close
+[0m16:56:24.856644 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_osrs, now create_osrs_main)
+[0m16:56:24.857465 [debug] [ThreadPool]: Creating schema "database: "osrs"
+schema: "main"
+"
+[0m16:56:24.866465 [debug] [ThreadPool]: Using duckdb connection "create_osrs_main"
+[0m16:56:24.867761 [debug] [ThreadPool]: On create_osrs_main: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "connection_name": "create_osrs_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='osrs'
+        and type != 'duckdb'
+    
+  
+[0m16:56:24.868455 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:56:24.870349 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m16:56:24.872110 [debug] [ThreadPool]: Using duckdb connection "create_osrs_main"
+[0m16:56:24.872781 [debug] [ThreadPool]: On create_osrs_main: BEGIN
+[0m16:56:24.873911 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m16:56:24.874564 [debug] [ThreadPool]: Using duckdb connection "create_osrs_main"
+[0m16:56:24.875206 [debug] [ThreadPool]: On create_osrs_main: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "connection_name": "create_osrs_main"} */
+
+    
+    
+        create schema if not exists "osrs"."main"
+    
+[0m16:56:24.876309 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m16:56:24.877524 [debug] [ThreadPool]: On create_osrs_main: COMMIT
+[0m16:56:24.878171 [debug] [ThreadPool]: Using duckdb connection "create_osrs_main"
+[0m16:56:24.878824 [debug] [ThreadPool]: On create_osrs_main: COMMIT
+[0m16:56:24.879731 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m16:56:24.880756 [debug] [ThreadPool]: On create_osrs_main: Close
+[0m16:56:24.883237 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_osrs_main, now list_osrs_main)
+[0m16:56:24.888624 [debug] [ThreadPool]: Using duckdb connection "list_osrs_main"
+[0m16:56:24.889311 [debug] [ThreadPool]: On list_osrs_main: BEGIN
+[0m16:56:24.889921 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:56:24.891255 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m16:56:24.891843 [debug] [ThreadPool]: Using duckdb connection "list_osrs_main"
+[0m16:56:24.892486 [debug] [ThreadPool]: On list_osrs_main: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "connection_name": "list_osrs_main"} */
+select
+      'osrs' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'osrs'
+  
+[0m16:56:24.895913 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m16:56:24.897986 [debug] [ThreadPool]: On list_osrs_main: ROLLBACK
+[0m16:56:24.899588 [debug] [ThreadPool]: On list_osrs_main: Close
+[0m16:56:24.901662 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4785c40d-9578-4fc6-b592-2edbaa1ca5fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x758ae0a8a270>]}
+[0m16:56:24.902537 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:56:24.903233 [debug] [MainThread]: On master: BEGIN
+[0m16:56:24.903908 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:56:24.905271 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m16:56:24.905962 [debug] [MainThread]: On master: COMMIT
+[0m16:56:24.906647 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:56:24.907332 [debug] [MainThread]: On master: COMMIT
+[0m16:56:24.908521 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m16:56:24.909260 [debug] [MainThread]: On master: Close
+[0m16:56:24.912504 [debug] [Thread-1 (]: Began running node model.osrs_ge_tracker.stg_5m_prices
+[0m16:56:24.913607 [info ] [Thread-1 (]: 1 of 2 START sql table model main.stg_5m_prices ................................ [RUN]
+[0m16:56:24.915036 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_osrs_main, now model.osrs_ge_tracker.stg_5m_prices)
+[0m16:56:24.916621 [debug] [Thread-1 (]: Began compiling node model.osrs_ge_tracker.stg_5m_prices
+[0m16:56:24.924113 [debug] [Thread-1 (]: Writing injected SQL for node "model.osrs_ge_tracker.stg_5m_prices"
+[0m16:56:24.932001 [debug] [Thread-1 (]: Began executing node model.osrs_ge_tracker.stg_5m_prices
+[0m16:56:24.987815 [debug] [Thread-1 (]: Writing runtime sql for node "model.osrs_ge_tracker.stg_5m_prices"
+[0m16:56:24.995489 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_5m_prices"
+[0m16:56:24.996217 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: BEGIN
+[0m16:56:24.996966 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:56:24.998718 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m16:56:24.999745 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_5m_prices"
+[0m16:56:25.000540 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_5m_prices"} */
+
+    
+
+    create  table
+      "osrs"."main"."stg_5m_prices__dbt_tmp"
+  
+    
+    as (
+      
+
+WITH deduped AS (
+    SELECT
+        data,
+        "timestamp" AS price_timestamp,
+        loaded_at
+    FROM "osrs"."main"."raw_5m_prices"
+    qualify row_number() OVER (PARTITION BY "timestamp" ORDER BY loaded_at asc) = 1
+),
+exploded AS (
+    SELECT
+        d.price_timestamp,
+        d.loaded_at,
+        item.key AS item_id,
+        item.value ->> 'avgHighPrice' AS avg_high_price,
+        item.value ->> 'highPriceVolume' AS high_price_volume,
+        item.value ->> 'avgLowPrice' AS avg_low_price,
+        item.value ->> 'lowPriceVolume' AS low_price_volume
+    FROM deduped d, json_each(d.data) AS item
+)
+
+SELECT
+    CAST(item_id AS bigint) AS item_id,
+    price_timestamp,
+    CAST(avg_high_price AS bigint) AS avg_high_price,
+    CAST(high_price_volume AS bigint) AS high_price_volume,
+    CAST(avg_low_price AS bigint) AS avg_low_price,
+    CAST(low_price_volume AS bigint) AS low_price_volume,
+    loaded_at
+FROM exploded
+    );
+    
+  
+[0m16:56:26.332540 [debug] [Thread-1 (]: SQL status: OK in 1.331 seconds
+[0m16:56:26.338882 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_5m_prices"
+[0m16:56:26.339910 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_5m_prices"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE database_name = 'osrs'
+      AND schema_name = 'main'
+      AND table_name = 'stg_5m_prices'
+  
+[0m16:56:26.341677 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m16:56:26.347853 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_5m_prices"
+[0m16:56:26.349084 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_5m_prices"} */
+alter table "osrs"."main"."stg_5m_prices" rename to "stg_5m_prices__dbt_backup"
+[0m16:56:26.350636 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m16:56:26.353445 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_5m_prices"
+[0m16:56:26.354248 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_5m_prices"} */
+alter table "osrs"."main"."stg_5m_prices__dbt_tmp" rename to "stg_5m_prices"
+[0m16:56:26.355456 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:56:26.374075 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: COMMIT
+[0m16:56:26.375157 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_5m_prices"
+[0m16:56:26.375886 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: COMMIT
+[0m16:56:26.392168 [debug] [Thread-1 (]: SQL status: OK in 0.015 seconds
+[0m16:56:26.397928 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_5m_prices"
+[0m16:56:26.399050 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_5m_prices"} */
+
+      drop table if exists "osrs"."main"."stg_5m_prices__dbt_backup" cascade
+    
+[0m16:56:26.403015 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m16:56:26.406170 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: Close
+[0m16:56:26.408193 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4785c40d-9578-4fc6-b592-2edbaa1ca5fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x758ae14aad50>]}
+[0m16:56:26.409168 [info ] [Thread-1 (]: 1 of 2 OK created sql table model main.stg_5m_prices ........................... [[32mOK[0m in 1.49s]
+[0m16:56:26.410131 [debug] [Thread-1 (]: Finished running node model.osrs_ge_tracker.stg_5m_prices
+[0m16:56:26.410921 [debug] [Thread-1 (]: Began running node model.osrs_ge_tracker.stg_mapping
+[0m16:56:26.411761 [info ] [Thread-1 (]: 2 of 2 START sql view model main.stg_mapping ................................... [RUN]
+[0m16:56:26.412634 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.osrs_ge_tracker.stg_5m_prices, now model.osrs_ge_tracker.stg_mapping)
+[0m16:56:26.413344 [debug] [Thread-1 (]: Began compiling node model.osrs_ge_tracker.stg_mapping
+[0m16:56:26.416348 [debug] [Thread-1 (]: Writing injected SQL for node "model.osrs_ge_tracker.stg_mapping"
+[0m16:56:26.423972 [debug] [Thread-1 (]: Began executing node model.osrs_ge_tracker.stg_mapping
+[0m16:56:26.442672 [debug] [Thread-1 (]: Writing runtime sql for node "model.osrs_ge_tracker.stg_mapping"
+[0m16:56:26.451410 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_mapping"
+[0m16:56:26.452275 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_mapping: BEGIN
+[0m16:56:26.452987 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:56:26.454247 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m16:56:26.454963 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_mapping"
+[0m16:56:26.455678 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_mapping: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_mapping"} */
+
+  
+  create view "osrs"."main"."stg_mapping__dbt_tmp" as (
+    SELECT
+    id AS item_id,
+    name AS item_name,
+    examine AS item_description,
+    members,
+    lowalch,
+    highalch,
+    "value" AS item_value,
+    "limit" AS buy_limit,
+    loaded_at
+FROM "osrs"."main"."raw_mapping"
+  );
+
+[0m16:56:26.457010 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m16:56:26.459897 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_mapping"
+[0m16:56:26.460705 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_mapping: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_mapping"} */
+alter view "osrs"."main"."stg_mapping" rename to "stg_mapping__dbt_backup"
+[0m16:56:26.461862 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:56:26.464349 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_mapping"
+[0m16:56:26.465383 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_mapping: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_mapping"} */
+alter view "osrs"."main"."stg_mapping__dbt_tmp" rename to "stg_mapping"
+[0m16:56:26.466996 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m16:56:26.469297 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_mapping: COMMIT
+[0m16:56:26.470181 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_mapping"
+[0m16:56:26.470952 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_mapping: COMMIT
+[0m16:56:26.474755 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m16:56:26.476867 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_mapping"
+[0m16:56:26.477596 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_mapping: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_mapping"} */
+
+      drop view if exists "osrs"."main"."stg_mapping__dbt_backup" cascade
+    
+[0m16:56:26.481064 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m16:56:26.483327 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_mapping: Close
+[0m16:56:26.484792 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4785c40d-9578-4fc6-b592-2edbaa1ca5fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x758ae0a5dbd0>]}
+[0m16:56:26.485781 [info ] [Thread-1 (]: 2 of 2 OK created sql view model main.stg_mapping .............................. [[32mOK[0m in 0.07s]
+[0m16:56:26.486746 [debug] [Thread-1 (]: Finished running node model.osrs_ge_tracker.stg_mapping
+[0m16:56:26.489695 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:56:26.490433 [debug] [MainThread]: On master: BEGIN
+[0m16:56:26.491086 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:56:26.492245 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m16:56:26.492942 [debug] [MainThread]: On master: COMMIT
+[0m16:56:26.493603 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:56:26.494249 [debug] [MainThread]: On master: COMMIT
+[0m16:56:26.495189 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m16:56:26.495841 [debug] [MainThread]: On master: Close
+[0m16:56:26.496636 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:56:26.497454 [debug] [MainThread]: Connection 'model.osrs_ge_tracker.stg_mapping' was properly closed.
+[0m16:56:26.498772 [info ] [MainThread]: 
+[0m16:56:26.499660 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 1.73 seconds (1.73s).
+[0m16:56:26.500930 [debug] [MainThread]: Command end result
+[0m16:56:26.564369 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/include/target/manifest.json
+[0m16:56:26.571135 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/include/target/semantic_manifest.json
+[0m16:56:26.576772 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/include/target/osi_document.json
+[0m16:56:26.588527 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/include/target/run_results.json
+[0m16:56:26.589324 [info ] [MainThread]: 
+[0m16:56:26.590106 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:56:26.590792 [info ] [MainThread]: 
+[0m16:56:26.591511 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=2
+[0m16:56:26.592894 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 2.8485012, "process_in_blocks": "55428", "process_kernel_time": 0.321626, "process_mem_max_rss": "302820", "process_out_blocks": "0", "process_user_time": 4.020325}
+[0m16:56:26.593707 [debug] [MainThread]: Command `dbt run` succeeded at 16:56:26.593607 after 2.85 seconds
+[0m16:56:26.594424 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x758ae09162b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x758ae14c79b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x758ae1452dd0>]}
+[0m16:56:26.595150 [debug] [MainThread]: Flushing usage events
+[0m16:56:26.813799 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:10:28.444787 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x709343ee2e40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x709342977ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x709342977b10>]}
+
+
+============================== 20:10:28.449914 | 21879ceb-428b-46dd-8c7d-6dbae3aef26e ==============================
+[0m20:10:28.449914 [info ] [MainThread]: Running with dbt=1.12.2
+[0m20:10:28.451269 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'log_format': 'default', 'hints_enabled': 'True', 'printer_width': '80', 'log_cache_events': 'False', 'profiles_dir': '.', 'static_parser': 'True', 'write_json': 'True', 'use_experimental_parser': 'False', 'target_path': 'None', 'partial_parse': 'True', 'log_path': '/opt/airflow/include/logs', 'version_check': 'True', 'empty': 'False', 'invocation_command': 'dbt run --select fct_item_prices --profiles-dir .', 'cache_selected_only': 'False', 'debug': 'False', 'no_print': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'maximum_seed_size_mib': '1', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m20:10:28.770556 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '21879ceb-428b-46dd-8c7d-6dbae3aef26e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x709343a11220>]}
+[0m20:10:28.912524 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '21879ceb-428b-46dd-8c7d-6dbae3aef26e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7093428cfdf0>]}
+[0m20:10:28.916668 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m20:10:29.015932 [debug] [MainThread]: checksum: abd22a93595a187da496bb2525a3e27287f0c8c6f4762e5b17fc3972fd556834, vars: {}, profile: osrs_ge_tracker, target: dev, version: 1.12.2
+[0m20:10:29.237409 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m20:10:29.238620 [debug] [MainThread]: Partial parsing: added file: osrs_ge_tracker://models/marts/fct_item_prices.sql
+[0m20:10:29.555353 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '21879ceb-428b-46dd-8c7d-6dbae3aef26e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7093346dc050>]}
+[0m20:10:29.688496 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/include/target/manifest.json
+[0m20:10:29.697456 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/include/target/semantic_manifest.json
+[0m20:10:29.725633 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/include/target/osi_document.json
+[0m20:10:29.744468 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '21879ceb-428b-46dd-8c7d-6dbae3aef26e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x709334675c70>]}
+[0m20:10:29.745367 [info ] [MainThread]: Found 3 models, 2 sources, 500 macros
+[0m20:10:29.746233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '21879ceb-428b-46dd-8c7d-6dbae3aef26e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7093346c9390>]}
+[0m20:10:29.748454 [info ] [MainThread]: 
+[0m20:10:29.749844 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m20:10:29.751151 [info ] [MainThread]: 
+[0m20:10:29.752557 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m20:10:29.754113 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_osrs'
+[0m20:10:29.803854 [debug] [ThreadPool]: Using duckdb connection "list_osrs"
+[0m20:10:29.804886 [debug] [ThreadPool]: On list_osrs: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "connection_name": "list_osrs"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"osrs"'
+    
+  
+  
+[0m20:10:29.805581 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:10:29.833603 [debug] [ThreadPool]: SQL status: OK in 0.028 seconds
+[0m20:10:29.836107 [debug] [ThreadPool]: On list_osrs: Close
+[0m20:10:29.837429 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_osrs, now create_osrs_main)
+[0m20:10:29.838275 [debug] [ThreadPool]: Creating schema "database: "osrs"
+schema: "main"
+"
+[0m20:10:29.845935 [debug] [ThreadPool]: Using duckdb connection "create_osrs_main"
+[0m20:10:29.846680 [debug] [ThreadPool]: On create_osrs_main: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "connection_name": "create_osrs_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='osrs'
+        and type != 'duckdb'
+    
+  
+[0m20:10:29.847318 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:10:29.849755 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m20:10:29.852288 [debug] [ThreadPool]: Using duckdb connection "create_osrs_main"
+[0m20:10:29.853011 [debug] [ThreadPool]: On create_osrs_main: BEGIN
+[0m20:10:29.854299 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m20:10:29.854961 [debug] [ThreadPool]: Using duckdb connection "create_osrs_main"
+[0m20:10:29.855624 [debug] [ThreadPool]: On create_osrs_main: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "connection_name": "create_osrs_main"} */
+
+    
+    
+        create schema if not exists "osrs"."main"
+    
+[0m20:10:29.856788 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m20:10:29.857995 [debug] [ThreadPool]: On create_osrs_main: COMMIT
+[0m20:10:29.858670 [debug] [ThreadPool]: Using duckdb connection "create_osrs_main"
+[0m20:10:29.859321 [debug] [ThreadPool]: On create_osrs_main: COMMIT
+[0m20:10:29.860238 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m20:10:29.860898 [debug] [ThreadPool]: On create_osrs_main: Close
+[0m20:10:29.868152 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_osrs_main, now list_osrs_main)
+[0m20:10:29.873706 [debug] [ThreadPool]: Using duckdb connection "list_osrs_main"
+[0m20:10:29.874520 [debug] [ThreadPool]: On list_osrs_main: BEGIN
+[0m20:10:29.875244 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:10:29.876565 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m20:10:29.877218 [debug] [ThreadPool]: Using duckdb connection "list_osrs_main"
+[0m20:10:29.877858 [debug] [ThreadPool]: On list_osrs_main: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "connection_name": "list_osrs_main"} */
+select
+      'osrs' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'osrs'
+  
+[0m20:10:29.881975 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m20:10:29.884403 [debug] [ThreadPool]: On list_osrs_main: ROLLBACK
+[0m20:10:29.885745 [debug] [ThreadPool]: On list_osrs_main: Close
+[0m20:10:29.887570 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '21879ceb-428b-46dd-8c7d-6dbae3aef26e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70932da254a0>]}
+[0m20:10:29.888425 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:10:29.889072 [debug] [MainThread]: On master: BEGIN
+[0m20:10:29.889713 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:10:29.890791 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m20:10:29.891466 [debug] [MainThread]: On master: COMMIT
+[0m20:10:29.892092 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:10:29.892721 [debug] [MainThread]: On master: COMMIT
+[0m20:10:29.893714 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m20:10:29.894365 [debug] [MainThread]: On master: Close
+[0m20:10:29.898814 [debug] [Thread-1 (]: Began running node model.osrs_ge_tracker.fct_item_prices
+[0m20:10:29.900216 [info ] [Thread-1 (]: 1 of 1 START sql table model main.fct_item_prices .............................. [RUN]
+[0m20:10:29.901429 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_osrs_main, now model.osrs_ge_tracker.fct_item_prices)
+[0m20:10:29.902345 [debug] [Thread-1 (]: Began compiling node model.osrs_ge_tracker.fct_item_prices
+[0m20:10:29.909731 [debug] [Thread-1 (]: Writing injected SQL for node "model.osrs_ge_tracker.fct_item_prices"
+[0m20:10:29.922167 [debug] [Thread-1 (]: Began executing node model.osrs_ge_tracker.fct_item_prices
+[0m20:10:29.977481 [debug] [Thread-1 (]: Writing runtime sql for node "model.osrs_ge_tracker.fct_item_prices"
+[0m20:10:29.990229 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.fct_item_prices"
+[0m20:10:29.991077 [debug] [Thread-1 (]: On model.osrs_ge_tracker.fct_item_prices: BEGIN
+[0m20:10:29.991764 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:10:29.993235 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m20:10:29.993921 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.fct_item_prices"
+[0m20:10:29.994662 [debug] [Thread-1 (]: On model.osrs_ge_tracker.fct_item_prices: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.fct_item_prices"} */
+
+    
+
+    create  table
+      "osrs"."main"."fct_item_prices__dbt_tmp"
+  
+    
+    as (
+      
+
+SELECT  m.item_id, m.item_name, m.item_description, m.members, m.lowalch, m.highalch, m.item_value, m.buy_limit,
+    m.loaded_at AS mapping_loaded_at,
+    p.price_timestamp,
+    p.avg_high_price,
+    p.high_price_volume,
+    p.avg_low_price,
+    p.low_price_volume,
+    p.loaded_at AS price_loaded_at
+FROM "osrs"."main"."stg_5m_prices" AS p
+LEFT JOIN "osrs"."main"."stg_mapping" AS m ON m.item_id = p.item_id
+    );
+    
+  
+[0m20:10:30.231655 [debug] [Thread-1 (]: SQL status: OK in 0.236 seconds
+[0m20:10:30.237827 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.fct_item_prices"
+[0m20:10:30.238684 [debug] [Thread-1 (]: On model.osrs_ge_tracker.fct_item_prices: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.fct_item_prices"} */
+alter table "osrs"."main"."fct_item_prices__dbt_tmp" rename to "fct_item_prices"
+[0m20:10:30.240058 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m20:10:30.259573 [debug] [Thread-1 (]: On model.osrs_ge_tracker.fct_item_prices: COMMIT
+[0m20:10:30.260718 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.fct_item_prices"
+[0m20:10:30.261481 [debug] [Thread-1 (]: On model.osrs_ge_tracker.fct_item_prices: COMMIT
+[0m20:10:30.316711 [debug] [Thread-1 (]: SQL status: OK in 0.054 seconds
+[0m20:10:30.325039 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.fct_item_prices"
+[0m20:10:30.326285 [debug] [Thread-1 (]: On model.osrs_ge_tracker.fct_item_prices: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.fct_item_prices"} */
+
+      drop table if exists "osrs"."main"."fct_item_prices__dbt_backup" cascade
+    
+[0m20:10:30.327917 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m20:10:30.331588 [debug] [Thread-1 (]: On model.osrs_ge_tracker.fct_item_prices: Close
+[0m20:10:30.334635 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '21879ceb-428b-46dd-8c7d-6dbae3aef26e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7093346637d0>]}
+[0m20:10:30.335935 [info ] [Thread-1 (]: 1 of 1 OK created sql table model main.fct_item_prices ......................... [[32mOK[0m in 0.43s]
+[0m20:10:30.337409 [debug] [Thread-1 (]: Finished running node model.osrs_ge_tracker.fct_item_prices
+[0m20:10:30.340485 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:10:30.341413 [debug] [MainThread]: On master: BEGIN
+[0m20:10:30.342107 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m20:10:30.343707 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m20:10:30.344566 [debug] [MainThread]: On master: COMMIT
+[0m20:10:30.345327 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:10:30.346005 [debug] [MainThread]: On master: COMMIT
+[0m20:10:30.347426 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m20:10:30.348400 [debug] [MainThread]: On master: Close
+[0m20:10:30.349510 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:10:30.350577 [debug] [MainThread]: Connection 'model.osrs_ge_tracker.fct_item_prices' was properly closed.
+[0m20:10:30.351692 [info ] [MainThread]: 
+[0m20:10:30.352942 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.60 seconds (0.60s).
+[0m20:10:30.354797 [debug] [MainThread]: Command end result
+[0m20:10:30.423554 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/include/target/manifest.json
+[0m20:10:30.429695 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/include/target/semantic_manifest.json
+[0m20:10:30.436395 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/include/target/osi_document.json
+[0m20:10:30.447385 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/include/target/run_results.json
+[0m20:10:30.448126 [info ] [MainThread]: 
+[0m20:10:30.449236 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:10:30.450439 [info ] [MainThread]: 
+[0m20:10:30.452060 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m20:10:30.453795 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 2.10898, "process_in_blocks": "53221", "process_kernel_time": 0.429801, "process_mem_max_rss": "276620", "process_out_blocks": "0", "process_user_time": 3.345154}
+[0m20:10:30.454928 [debug] [MainThread]: Command `dbt run` succeeded at 20:10:30.454716 after 2.11 seconds
+[0m20:10:30.455787 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x709334682990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70932daa3610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70932daa2fd0>]}
+[0m20:10:30.456554 [debug] [MainThread]: Flushing usage events
+[0m20:10:30.734913 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:23:21.814973 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea4a3f82e40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea4a2a17ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea4a2a17b10>]}
+
+
+============================== 12:23:21.819556 | 3be77659-5b74-4746-9a7f-a167c282716e ==============================
+[0m12:23:21.819556 [info ] [MainThread]: Running with dbt=1.12.2
+[0m12:23:21.820541 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'printer_width': '80', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'maximum_seed_size_mib': '1', 'introspect': 'True', 'target_path': 'None', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'no_print': 'None', 'version_check': 'True', 'profiles_dir': '.', 'fail_fast': 'False', 'debug': 'False', 'empty': 'False', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'write_json': 'True', 'hints_enabled': 'True', 'partial_parse': 'True', 'invocation_command': 'dbt run --profiles-dir .', 'log_path': '/opt/airflow/include/logs', 'quiet': 'False'}
+[0m12:23:22.128439 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3be77659-5b74-4746-9a7f-a167c282716e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea4a3ab1220>]}
+[0m12:23:22.267890 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3be77659-5b74-4746-9a7f-a167c282716e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea4a296bdf0>]}
+[0m12:23:22.274828 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m12:23:22.373993 [debug] [MainThread]: checksum: abd22a93595a187da496bb2525a3e27287f0c8c6f4762e5b17fc3972fd556834, vars: {}, profile: osrs_ge_tracker, target: dev, version: 1.12.2
+[0m12:23:22.582286 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:23:22.583245 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m12:23:22.584066 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:23:22.594774 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3be77659-5b74-4746-9a7f-a167c282716e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea4969b3c50>]}
+[0m12:23:22.739521 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/include/target/manifest.json
+[0m12:23:22.746097 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/include/target/semantic_manifest.json
+[0m12:23:22.770066 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/include/target/osi_document.json
+[0m12:23:22.786826 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3be77659-5b74-4746-9a7f-a167c282716e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea4947ad040>]}
+[0m12:23:22.787775 [info ] [MainThread]: Found 3 models, 2 sources, 500 macros
+[0m12:23:22.788519 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3be77659-5b74-4746-9a7f-a167c282716e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea49478b770>]}
+[0m12:23:22.790809 [info ] [MainThread]: 
+[0m12:23:22.791682 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m12:23:22.792374 [info ] [MainThread]: 
+[0m12:23:22.793322 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m12:23:22.798725 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_osrs'
+[0m12:23:22.848491 [debug] [ThreadPool]: Using duckdb connection "list_osrs"
+[0m12:23:22.849538 [debug] [ThreadPool]: On list_osrs: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "connection_name": "list_osrs"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"osrs"'
+    
+  
+  
+[0m12:23:22.850216 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:23:22.877945 [debug] [ThreadPool]: SQL status: OK in 0.028 seconds
+[0m12:23:22.880079 [debug] [ThreadPool]: On list_osrs: Close
+[0m12:23:22.881419 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_osrs, now create_osrs_main)
+[0m12:23:22.882549 [debug] [ThreadPool]: Creating schema "database: "osrs"
+schema: "main"
+"
+[0m12:23:22.890395 [debug] [ThreadPool]: Using duckdb connection "create_osrs_main"
+[0m12:23:22.891138 [debug] [ThreadPool]: On create_osrs_main: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "connection_name": "create_osrs_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='osrs'
+        and type != 'duckdb'
+    
+  
+[0m12:23:22.891837 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m12:23:22.893629 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m12:23:22.895351 [debug] [ThreadPool]: Using duckdb connection "create_osrs_main"
+[0m12:23:22.896041 [debug] [ThreadPool]: On create_osrs_main: BEGIN
+[0m12:23:22.897281 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m12:23:22.897939 [debug] [ThreadPool]: Using duckdb connection "create_osrs_main"
+[0m12:23:22.898621 [debug] [ThreadPool]: On create_osrs_main: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "connection_name": "create_osrs_main"} */
+
+    
+    
+        create schema if not exists "osrs"."main"
+    
+[0m12:23:22.899755 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m12:23:22.901066 [debug] [ThreadPool]: On create_osrs_main: COMMIT
+[0m12:23:22.901744 [debug] [ThreadPool]: Using duckdb connection "create_osrs_main"
+[0m12:23:22.902390 [debug] [ThreadPool]: On create_osrs_main: COMMIT
+[0m12:23:22.903375 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m12:23:22.904063 [debug] [ThreadPool]: On create_osrs_main: Close
+[0m12:23:22.906056 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_osrs_main, now list_osrs_main)
+[0m12:23:22.911159 [debug] [ThreadPool]: Using duckdb connection "list_osrs_main"
+[0m12:23:22.911922 [debug] [ThreadPool]: On list_osrs_main: BEGIN
+[0m12:23:22.912546 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m12:23:22.913817 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m12:23:22.914535 [debug] [ThreadPool]: Using duckdb connection "list_osrs_main"
+[0m12:23:22.915204 [debug] [ThreadPool]: On list_osrs_main: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "connection_name": "list_osrs_main"} */
+select
+      'osrs' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'osrs'
+  
+[0m12:23:22.918863 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m12:23:22.920866 [debug] [ThreadPool]: On list_osrs_main: ROLLBACK
+[0m12:23:22.921904 [debug] [ThreadPool]: On list_osrs_main: Close
+[0m12:23:22.923870 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3be77659-5b74-4746-9a7f-a167c282716e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea4947dc1f0>]}
+[0m12:23:22.924777 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:23:22.925458 [debug] [MainThread]: On master: BEGIN
+[0m12:23:22.926099 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:23:22.927193 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m12:23:22.927868 [debug] [MainThread]: On master: COMMIT
+[0m12:23:22.928547 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:23:22.929254 [debug] [MainThread]: On master: COMMIT
+[0m12:23:22.930326 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m12:23:22.931006 [debug] [MainThread]: On master: Close
+[0m12:23:22.935181 [debug] [Thread-1 (]: Began running node model.osrs_ge_tracker.stg_5m_prices
+[0m12:23:22.936382 [info ] [Thread-1 (]: 1 of 3 START sql table model main.stg_5m_prices ................................ [RUN]
+[0m12:23:22.937458 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_osrs_main, now model.osrs_ge_tracker.stg_5m_prices)
+[0m12:23:22.938297 [debug] [Thread-1 (]: Began compiling node model.osrs_ge_tracker.stg_5m_prices
+[0m12:23:22.945544 [debug] [Thread-1 (]: Writing injected SQL for node "model.osrs_ge_tracker.stg_5m_prices"
+[0m12:23:22.953672 [debug] [Thread-1 (]: Began executing node model.osrs_ge_tracker.stg_5m_prices
+[0m12:23:23.007605 [debug] [Thread-1 (]: Writing runtime sql for node "model.osrs_ge_tracker.stg_5m_prices"
+[0m12:23:23.015734 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_5m_prices"
+[0m12:23:23.016578 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: BEGIN
+[0m12:23:23.017334 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:23:23.018758 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m12:23:23.019478 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_5m_prices"
+[0m12:23:23.020202 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_5m_prices"} */
+
+    
+
+    create  table
+      "osrs"."main"."stg_5m_prices__dbt_tmp"
+  
+    
+    as (
+      
+
+WITH deduped AS (
+    SELECT
+        data,
+        "timestamp" AS price_timestamp,
+        loaded_at
+    FROM "osrs"."main"."raw_5m_prices"
+    qualify row_number() OVER (PARTITION BY "timestamp" ORDER BY loaded_at asc) = 1
+),
+exploded AS (
+    SELECT
+        d.price_timestamp,
+        d.loaded_at,
+        item.key AS item_id,
+        item.value ->> 'avgHighPrice' AS avg_high_price,
+        item.value ->> 'highPriceVolume' AS high_price_volume,
+        item.value ->> 'avgLowPrice' AS avg_low_price,
+        item.value ->> 'lowPriceVolume' AS low_price_volume
+    FROM deduped d, json_each(d.data) AS item
+)
+
+SELECT
+    CAST(item_id AS bigint) AS item_id,
+    price_timestamp,
+    CAST(avg_high_price AS bigint) AS avg_high_price,
+    CAST(high_price_volume AS bigint) AS high_price_volume,
+    CAST(avg_low_price AS bigint) AS avg_low_price,
+    CAST(low_price_volume AS bigint) AS low_price_volume,
+    loaded_at
+FROM exploded
+    );
+    
+  
+[0m12:23:24.550003 [debug] [Thread-1 (]: SQL status: OK in 1.529 seconds
+[0m12:23:24.557150 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_5m_prices"
+[0m12:23:24.558350 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_5m_prices"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE database_name = 'osrs'
+      AND schema_name = 'main'
+      AND table_name = 'stg_5m_prices'
+  
+[0m12:23:24.560125 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m12:23:24.566883 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_5m_prices"
+[0m12:23:24.568063 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_5m_prices"} */
+alter table "osrs"."main"."stg_5m_prices" rename to "stg_5m_prices__dbt_backup"
+[0m12:23:24.570348 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m12:23:24.574040 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_5m_prices"
+[0m12:23:24.575116 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_5m_prices"} */
+alter table "osrs"."main"."stg_5m_prices__dbt_tmp" rename to "stg_5m_prices"
+[0m12:23:24.576822 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m12:23:24.595936 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: COMMIT
+[0m12:23:24.597064 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_5m_prices"
+[0m12:23:24.597804 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: COMMIT
+[0m12:23:24.609694 [debug] [Thread-1 (]: SQL status: OK in 0.011 seconds
+[0m12:23:24.615962 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_5m_prices"
+[0m12:23:24.617433 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_5m_prices"} */
+
+      drop table if exists "osrs"."main"."stg_5m_prices__dbt_backup" cascade
+    
+[0m12:23:24.622989 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m12:23:24.626360 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_5m_prices: Close
+[0m12:23:24.629104 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3be77659-5b74-4746-9a7f-a167c282716e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea4947cae10>]}
+[0m12:23:24.630410 [info ] [Thread-1 (]: 1 of 3 OK created sql table model main.stg_5m_prices ........................... [[32mOK[0m in 1.69s]
+[0m12:23:24.631536 [debug] [Thread-1 (]: Finished running node model.osrs_ge_tracker.stg_5m_prices
+[0m12:23:24.632453 [debug] [Thread-1 (]: Began running node model.osrs_ge_tracker.stg_mapping
+[0m12:23:24.634114 [info ] [Thread-1 (]: 2 of 3 START sql view model main.stg_mapping ................................... [RUN]
+[0m12:23:24.635213 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.osrs_ge_tracker.stg_5m_prices, now model.osrs_ge_tracker.stg_mapping)
+[0m12:23:24.636067 [debug] [Thread-1 (]: Began compiling node model.osrs_ge_tracker.stg_mapping
+[0m12:23:24.638623 [debug] [Thread-1 (]: Writing injected SQL for node "model.osrs_ge_tracker.stg_mapping"
+[0m12:23:24.647183 [debug] [Thread-1 (]: Began executing node model.osrs_ge_tracker.stg_mapping
+[0m12:23:24.667436 [debug] [Thread-1 (]: Writing runtime sql for node "model.osrs_ge_tracker.stg_mapping"
+[0m12:23:24.675511 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_mapping"
+[0m12:23:24.676375 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_mapping: BEGIN
+[0m12:23:24.677098 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:23:24.678393 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m12:23:24.679122 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_mapping"
+[0m12:23:24.679837 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_mapping: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_mapping"} */
+
+  
+  create view "osrs"."main"."stg_mapping__dbt_tmp" as (
+    SELECT
+    id AS item_id,
+    name AS item_name,
+    examine AS item_description,
+    members,
+    lowalch,
+    highalch,
+    "value" AS item_value,
+    "limit" AS buy_limit,
+    loaded_at
+FROM "osrs"."main"."raw_mapping"
+  );
+
+[0m12:23:24.681422 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m12:23:24.684269 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_mapping"
+[0m12:23:24.685060 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_mapping: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_mapping"} */
+alter view "osrs"."main"."stg_mapping" rename to "stg_mapping__dbt_backup"
+[0m12:23:24.686262 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:23:24.688890 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_mapping"
+[0m12:23:24.689652 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_mapping: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_mapping"} */
+alter view "osrs"."main"."stg_mapping__dbt_tmp" rename to "stg_mapping"
+[0m12:23:24.691133 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m12:23:24.693411 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_mapping: COMMIT
+[0m12:23:24.694182 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_mapping"
+[0m12:23:24.694899 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_mapping: COMMIT
+[0m12:23:24.699350 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m12:23:24.701914 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.stg_mapping"
+[0m12:23:24.702846 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_mapping: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.stg_mapping"} */
+
+      drop view if exists "osrs"."main"."stg_mapping__dbt_backup" cascade
+    
+[0m12:23:24.706771 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m12:23:24.709037 [debug] [Thread-1 (]: On model.osrs_ge_tracker.stg_mapping: Close
+[0m12:23:24.710403 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3be77659-5b74-4746-9a7f-a167c282716e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea494575de0>]}
+[0m12:23:24.711713 [info ] [Thread-1 (]: 2 of 3 OK created sql view model main.stg_mapping .............................. [[32mOK[0m in 0.08s]
+[0m12:23:24.713007 [debug] [Thread-1 (]: Finished running node model.osrs_ge_tracker.stg_mapping
+[0m12:23:24.714654 [debug] [Thread-1 (]: Began running node model.osrs_ge_tracker.fct_item_prices
+[0m12:23:24.715601 [info ] [Thread-1 (]: 3 of 3 START sql table model main.fct_item_prices .............................. [RUN]
+[0m12:23:24.716578 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.osrs_ge_tracker.stg_mapping, now model.osrs_ge_tracker.fct_item_prices)
+[0m12:23:24.717453 [debug] [Thread-1 (]: Began compiling node model.osrs_ge_tracker.fct_item_prices
+[0m12:23:24.720357 [debug] [Thread-1 (]: Writing injected SQL for node "model.osrs_ge_tracker.fct_item_prices"
+[0m12:23:24.728681 [debug] [Thread-1 (]: Began executing node model.osrs_ge_tracker.fct_item_prices
+[0m12:23:24.733171 [debug] [Thread-1 (]: Writing runtime sql for node "model.osrs_ge_tracker.fct_item_prices"
+[0m12:23:24.742000 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.fct_item_prices"
+[0m12:23:24.743215 [debug] [Thread-1 (]: On model.osrs_ge_tracker.fct_item_prices: BEGIN
+[0m12:23:24.744228 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:23:24.746152 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m12:23:24.747310 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.fct_item_prices"
+[0m12:23:24.748334 [debug] [Thread-1 (]: On model.osrs_ge_tracker.fct_item_prices: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.fct_item_prices"} */
+
+    
+
+    create  table
+      "osrs"."main"."fct_item_prices__dbt_tmp"
+  
+    
+    as (
+      
+
+SELECT  m.item_id, m.item_name, m.item_description, m.members, m.lowalch, m.highalch, m.item_value, m.buy_limit,
+    m.loaded_at AS mapping_loaded_at,
+    p.price_timestamp,
+    p.avg_high_price,
+    p.high_price_volume,
+    p.avg_low_price,
+    p.low_price_volume,
+    p.loaded_at AS price_loaded_at
+FROM "osrs"."main"."stg_5m_prices" AS p
+LEFT JOIN "osrs"."main"."stg_mapping" AS m ON m.item_id = p.item_id
+    );
+    
+  
+[0m12:23:24.977079 [debug] [Thread-1 (]: SQL status: OK in 0.228 seconds
+[0m12:23:24.979353 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.fct_item_prices"
+[0m12:23:24.980127 [debug] [Thread-1 (]: On model.osrs_ge_tracker.fct_item_prices: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.fct_item_prices"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE database_name = 'osrs'
+      AND schema_name = 'main'
+      AND table_name = 'fct_item_prices'
+  
+[0m12:23:24.981798 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m12:23:24.985343 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.fct_item_prices"
+[0m12:23:24.986087 [debug] [Thread-1 (]: On model.osrs_ge_tracker.fct_item_prices: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.fct_item_prices"} */
+alter table "osrs"."main"."fct_item_prices" rename to "fct_item_prices__dbt_backup"
+[0m12:23:24.987313 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m12:23:24.989736 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.fct_item_prices"
+[0m12:23:24.990453 [debug] [Thread-1 (]: On model.osrs_ge_tracker.fct_item_prices: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.fct_item_prices"} */
+alter table "osrs"."main"."fct_item_prices__dbt_tmp" rename to "fct_item_prices"
+[0m12:23:24.991607 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:23:24.993909 [debug] [Thread-1 (]: On model.osrs_ge_tracker.fct_item_prices: COMMIT
+[0m12:23:24.994838 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.fct_item_prices"
+[0m12:23:24.995631 [debug] [Thread-1 (]: On model.osrs_ge_tracker.fct_item_prices: COMMIT
+[0m12:23:25.066943 [debug] [Thread-1 (]: SQL status: OK in 0.070 seconds
+[0m12:23:25.069510 [debug] [Thread-1 (]: Using duckdb connection "model.osrs_ge_tracker.fct_item_prices"
+[0m12:23:25.070255 [debug] [Thread-1 (]: On model.osrs_ge_tracker.fct_item_prices: /* {"app": "dbt", "dbt_version": "1.12.2", "profile_name": "osrs_ge_tracker", "target_name": "dev", "node_id": "model.osrs_ge_tracker.fct_item_prices"} */
+
+      drop table if exists "osrs"."main"."fct_item_prices__dbt_backup" cascade
+    
+[0m12:23:25.074152 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m12:23:25.076527 [debug] [Thread-1 (]: On model.osrs_ge_tracker.fct_item_prices: Close
+[0m12:23:25.077728 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3be77659-5b74-4746-9a7f-a167c282716e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea49447d950>]}
+[0m12:23:25.078873 [info ] [Thread-1 (]: 3 of 3 OK created sql table model main.fct_item_prices ......................... [[32mOK[0m in 0.36s]
+[0m12:23:25.079874 [debug] [Thread-1 (]: Finished running node model.osrs_ge_tracker.fct_item_prices
+[0m12:23:25.082418 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:23:25.083189 [debug] [MainThread]: On master: BEGIN
+[0m12:23:25.083845 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m12:23:25.085082 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m12:23:25.085767 [debug] [MainThread]: On master: COMMIT
+[0m12:23:25.086430 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:23:25.087062 [debug] [MainThread]: On master: COMMIT
+[0m12:23:25.088102 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m12:23:25.088799 [debug] [MainThread]: On master: Close
+[0m12:23:25.089899 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:23:25.090781 [debug] [MainThread]: Connection 'model.osrs_ge_tracker.fct_item_prices' was properly closed.
+[0m12:23:25.091685 [info ] [MainThread]: 
+[0m12:23:25.092555 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 2.30 seconds (2.30s).
+[0m12:23:25.094783 [debug] [MainThread]: Command end result
+[0m12:23:25.170323 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/include/target/manifest.json
+[0m12:23:25.176374 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/include/target/semantic_manifest.json
+[0m12:23:25.182299 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/include/target/osi_document.json
+[0m12:23:25.193957 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/include/target/run_results.json
+[0m12:23:25.194718 [info ] [MainThread]: 
+[0m12:23:25.195480 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:23:25.196214 [info ] [MainThread]: 
+[0m12:23:25.196985 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=3
+[0m12:23:25.198372 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 3.4794326, "process_in_blocks": "103714", "process_kernel_time": 0.525029, "process_mem_max_rss": "372252", "process_out_blocks": "0", "process_user_time": 5.908598}
+[0m12:23:25.199173 [debug] [MainThread]: Command `dbt run` succeeded at 12:23:25.199074 after 3.48 seconds
+[0m12:23:25.199914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea49474efd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea496b90450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea4a2a43150>]}
+[0m12:23:25.200657 [debug] [MainThread]: Flushing usage events
+[0m12:23:25.554513 [debug] [MainThread]: An error was encountered while trying to flush usage events
